@@ -3,10 +3,10 @@ var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 
-function bodyBackground (){
-	body.style.background = "linear-gradient(to right , " 
-	+ color1.value +" , " 
-	+ color2.value +")";
+function bodyBackground() {
+	body.style.background = "linear-gradient(to right , "
+		+ color1.value + " , "
+		+ color2.value + ")";
 
 	gradInfo.textContent = body.style.background + ";";
 }
