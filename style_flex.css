@@ -1,0 +1,67 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+h1 {
+	font-family: fantasy;
+	font-size: 40px;
+	border-bottom: 3px solid #1d2d50;
+	border-right: 3px solid #1d2d50;
+	width: 400px;
+	text-align: center;
+	box-shadow: 4px 4px 5px 5px #1e5f74;
+	margin:20px;
+	padding-top: 10px;
+	animation-name: example;
+    animation-duration: 4s;
+  	animation-iteration-count: 3;
+  	position: relative;
+  	animation-delay: 2s;
+  	background-color: #68b0ab;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	margin: 30px;
+	border: 5px solid #1d2d50;
+	transition: all 1s; 
+}
+
+img:hover {
+	transform: scale(1.1);
+	border: 5px solid #1d2d50;
+	box-shadow: 5px 5px 5px 5px #1e5f74;
+}
+@keyframes example {
+  from {background-color: #1a1a2e;}
+  to {background-color: #68b0ab;}
+}
+
+.polling_message {
+  color: #1d2d50;
+  float: left;
+}
+
+.view_port {
+  background-color: #e89f71;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cylon_eye {
+  background-color: red;
+  background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(196,22,61,1) 100%);
+  color: red;
+  height: 100%;
+  width: 10%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+          animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
